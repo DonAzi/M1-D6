@@ -60,26 +60,56 @@ me.skills = {
 /* EXERCISE G
    Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
 */
-
+delete me.skills.JavaScript
+console.log(me)
 
 // JS Functions
 /* EXERCISE 1
     Write a function called dice; it should randomize an integer number between 1 and 6.
 */
 
+const dice = function (num1, num2) 
+{
+    
+ return  Math.floor(Math.random()* num1 +num2)
+
+}
+
+console.log(dice(6,1))
+
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
 
+const whoIsBigger=( big, small) => {
+  if (big>small)
+   {
+    return big
+  }
+  else  { return small}
+}
+console.log(whoIsBigger(5, 14))
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
 
+const splitMe = (str) => {
+  return str.split()
+}
+console.log(splitMe("Can Yuu See Mee"))
+
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
-*/
+*/   return 
+const deleteOne = (str, bool) => {
+  if true {
+     str.substng(1)
+  }
+  else false ; { str.substring(-1) }
+}
+console.log(deleteOne("Coder", true))
 
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
