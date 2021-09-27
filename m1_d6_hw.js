@@ -9,8 +9,6 @@ ASSIGNMENT RULES
 - Complete as many exercises as you can
 */
 
-const { doesNotMatch } = require("assert")
-
 // JS Basics
 
 /* EXERCISE A
@@ -95,26 +93,36 @@ console.log(whoIsBigger(5, 14))
 */
 
 const splitMe = (str) => {
-  return str.split()
+  return str.split("",)
 }
 console.log(splitMe("Can Yuu See Mee"))
 
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
-*/   return 
-const deleteOne = (str, bool) => {
-  if true {
-     str.substng(1)
+*/  
+const deleteOne = (str, boolean) => {
+  if (boolean) {
+    return str.slice(1)
   }
-  else false ; { str.substring(-1) }
-}
-console.log(deleteOne("Coder", true))
-
+  else  {
+    return str.slice(0, -1)
+  } }
+console.log(deleteOne)
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
+ const onlyLetters = (str) => {
+    let newStr = str.split(" ")
+    for (i=0; i<newStr.length; i++) {
+      let num = 1, 2, 3, 4, 5
+    if (newStr.match(num)) {
+      return newStr.slice(num)
+    }
+    console.logI(onlyLetters)
+    }
+ }
 
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
