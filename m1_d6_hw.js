@@ -15,115 +15,114 @@ ASSIGNMENT RULES
    Create a variable called test and assign a string value to it.
 */
 let test = "newTest"
-// console.log(test)
+  console.log(test)
 
-/* EXERCISE B
-    Create a variable called sum and assign to it the result of the sum between the numbers 10 and 20.
-*/
-let sum = 10+20
-// console.log(sum)
+// /* EXERCISE B
+//     Create a variable called sum and assign to it the result of the sum between the numbers 10 and 20.
+// */
+// let sum = 10+20
+// // console.log(sum)
 
-/* EXERCISE C
-    Create a variable called random and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
-*/
+// /* EXERCISE C
+//     Create a variable called random and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
+// */
 
-let random = Math.floor(Math.random()* 20 +1 )
-console.log(random)
+// let random = Math.floor(Math.random()* 20 +1 )
+// console.log(random)
 
-/* EXERCISE D
-    Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
-*/
-let me = {
-  name: "Don",
-  surname: "Az",
-  age: 23,
-  }
+// /* EXERCISE D
+//     Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
+// */
+// let me = {
+//   name: "Don",
+//   surname: "Az",
+//   age: 23,
+//   }
 
-/* EXERCISE E
-    Write a piece of code for programmatically removing the age property from the previously create object.
-*/
-  delete me.age
-      // console.log(me)
-/* EXERCISE F
-   Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
-*/
+// /* EXERCISE E
+//     Write a piece of code for programmatically removing the age property from the previously create object.
+// */
+//   delete me.age
+//       // console.log(me)
+// /* EXERCISE F
+//    Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
+// */
 
-me.skills = {
-   Java: "beginner",
-   HTM: "BEginner",
-   CSS:"Beginner",
-   JavaScript: "Beginner"
-}
-    // console.log(me)
-/* EXERCISE G
-   Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
-*/
-delete me.skills.JavaScript
-console.log(me)
+//  me.append(skills) = {
+//    Java: "beginner",
+//    HTM: "BEginner",
+//    CSS:"Beginner",
+//    JavaScript: "Beginner"
+// }
+//     console.log(me)
+// /* EXERCISE G
+//    Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
+// */
+// delete me.skills.JavaScript
+// console.log(me)
 
-// JS Functions
-/* EXERCISE 1
-    Write a function called dice; it should randomize an integer number between 1 and 6.
-*/
+// // JS Functions
+// /* EXERCISE 1
+//     Write a function called dice; it should randomize an integer number between 1 and 6.
+// */
 
-const dice = function (num1, num2) 
-{
+// const dice = function (num1, num2) 
+// {
     
- return  Math.floor(Math.random()* num1 +num2)
+//  return  Math.floor(Math.random()* num1 +num2)
 
-}
+// }
 
-console.log(dice(6,1))
+// console.log(dice(6,1))
 
-/* EXERCISE 2
-    Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
-*/
+// /* EXERCISE 2
+//     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
+// */
 
-const whoIsBigger=( big, small) => {
-  if (big>small)
-   {
-    return big
-  }
-  else  { return small}
-}
-console.log(whoIsBigger(5, 14))
-/* EXERCISE 3
-    Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
-    Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
-*/
+// const whoIsBigger=( big, small) => {
+//   if (big>small)
+//    {
+//     return big
+//   }
+//   else  { return small}
+// }
+// console.log(whoIsBigger(5, 14))
+// /* EXERCISE 3
+//     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
+//     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
+// */
 
-const splitMe = (str) => {
-  return str.split("",)
-}
-console.log(splitMe("Can Yuu See Mee"))
+// const splitMe = (str) => {
+//   return str.split(" ",)
+// }
+// console.log(splitMe("Can Yuu See Mee"))
 
-/* EXERCISE 4
-    Write a function called deleteOne which receives a string and a boolean as parameters.
-    If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
-*/  
-const deleteOne = (str, boolean) => {
-  if (boolean) {
-    return str.slice(1)
-  }
-  else  {
-    return str.slice(0, -1)
-  } }
-console.log(deleteOne)
+// /* EXERCISE 4
+//     Write a function called deleteOne which receives a string and a boolean as parameters.
+//     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
+// */  
+// const deleteOne = (str, boolean) => {
+//   if (boolean) {
+//     return str.slice(1)
+//   }
+//   else  {
+//     return str.slice(0, -1)
+//   } }
+// console.log(deleteOne)
+
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
-//  const onlyLetters = (str) => {
-//     let newStr = str.split(" ")
-//     for (i=0; i<newStr.length; i++) {
-//       let num = 1, 2, 3, 4, 5
-//     if (newStr.match(num)) {
-//       return newStr.slice(num)
+//  const onlyLetters = (str, first) => {
+//     if (first) {
+//       return str.substring(1)
 //     }
-//     console.log(onlyLetters)
+//     else {
+//         return str.substring(0, str.length-1)
+//      }
 //     }
-//  }
-
+ 
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
@@ -143,7 +142,7 @@ console.log(isThisAnEmail('anyString@anyString.anyString'))
 
 const d = new Date(2018, 11, 24, 10, 33, 30, 0);
 
-console.log()
+console.log(d)
 /* EXERCISE 8
     Write a function called rollTheDices which receives a number as a parameter.
     It should invoke the dice() function defined in Ex1 the specified amount of times,
